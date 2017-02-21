@@ -34,14 +34,6 @@ OSCData::OSCData(int32_t i){
 	bytes = 4;
 	data.i = i;
 }
-#ifndef ESP8266
-OSCData::OSCData(int i){
-	error = OSC_OK;
-	type = 'i';
-	bytes = 4;
-	data.i = i;
-}
-#endif
 OSCData::OSCData(unsigned int i){
 	error = OSC_OK;
 	type = 'i';
